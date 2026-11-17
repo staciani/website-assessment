@@ -1,0 +1,525 @@
+/* Home-page-only overrides for the previous theme color. */
+body.home-page {
+  --yellow: #adadad;
+  --warning: #adadad;
+}
+
+body.home-page .ftco-about .about-image {
+  background-color: #1c1511;
+  background-image: linear-gradient(rgba(28, 21, 17, 0.16), rgba(28, 21, 17, 0.16)), url("../images/about-us.png");
+}
+
+body.home-page .ftco-about > .one-half:not(.img) {
+  background-color: rgba(28, 21, 17, 0.78);
+  backdrop-filter: blur(4px);
+  color: #f5f0e8;
+}
+
+body.home-page .ftco-about > .one-half:not(.img) h2 {
+  color: #fff;
+}
+
+body.home-page .ftco-about > .one-half:not(.img) p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+body.home-page .home-contact-image {
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  overflow: hidden;
+  background-color: #1c1511;
+}
+
+body.home-page .ftco-appointment .row.no-gutters.d-md-flex {
+  align-items: stretch !important;
+}
+
+body.home-page .home-contact-slideshow {
+  height: 100%;
+  flex: 1 1 auto;
+}
+
+body.home-page .home-contact-slideshow .owl-stage-outer,
+body.home-page .home-contact-slideshow .owl-stage,
+body.home-page .home-contact-slideshow .owl-item,
+body.home-page .home-contact-slide {
+  height: 100%;
+}
+
+body.home-page .home-contact-slide {
+  position: relative;
+}
+
+body.home-page .home-contact-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body.home-page .home-contact-caption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 34px 20px 36px;
+  background: linear-gradient(transparent, rgba(20, 15, 12, 0.78));
+  color: #fff;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 19px;
+  text-align: center;
+  pointer-events: none;
+}
+
+body.home-page .home-contact-slideshow .owl-nav {
+  margin: 0;
+}
+
+body.home-page .home-contact-slideshow .owl-nav button.owl-prev,
+body.home-page .home-contact-slideshow .owl-nav button.owl-next {
+  position: absolute;
+  top: 50%;
+  width: 38px;
+  height: 38px;
+  margin: 0;
+  transform: translateY(-50%);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 50%;
+  background: rgba(28, 21, 17, 0.45);
+  color: #fff;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+body.home-page .home-contact-slideshow .owl-nav button.owl-prev {
+  left: 14px;
+}
+
+body.home-page .home-contact-slideshow .owl-nav button.owl-next {
+  right: 14px;
+}
+
+body.home-page .home-contact-slideshow .owl-nav button:hover,
+body.home-page .home-contact-slideshow .owl-nav button:focus {
+  background: rgba(28, 21, 17, 0.8);
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+body.home-page .home-contact-slideshow .owl-dots {
+  position: absolute;
+  right: 0;
+  bottom: 8px;
+  left: 0;
+  margin: 0;
+}
+
+body.home-page .home-contact-slideshow .owl-dots .owl-dot span {
+  background: rgba(255, 255, 255, 0.55);
+}
+
+body.home-page .home-contact-slideshow .owl-dots .owl-dot.active span,
+body.home-page .home-contact-slideshow .owl-dots .owl-dot:hover span {
+  background: #fff;
+}
+
+@media (max-width: 767.98px) {
+  body.home-page .home-contact-image {
+    height: 260px;
+    min-height: 260px;
+  }
+
+  body.home-page .home-contact-slideshow {
+    height: 260px;
+  }
+
+  body.home-page .home-contact-slideshow .owl-stage-outer,
+  body.home-page .home-contact-slideshow .owl-stage,
+  body.home-page .home-contact-slideshow .owl-item,
+  body.home-page .home-contact-slide {
+    height: 100%;
+  }
+}
+
+body.home-page mark, body.home-page .mark {
+  background-color: #adadad;
+}
+
+body.home-page .table-warning, body.home-page .table-warning > th, body.home-page .table-warning > td {
+  background-color: #adadad;
+}
+
+body.home-page .table-hover .table-warning:hover {
+  background-color: #adadad;
+}
+
+body.home-page .table-hover .table-warning:hover > td, body.home-page .table-hover .table-warning:hover > th {
+  background-color: #adadad;
+}
+
+body.home-page .btn-warning {
+  background-color: #adadad;
+  border-color: #adadad;
+}
+
+body.home-page .btn-warning:hover {
+  background-color: #adadad;
+  border-color: #adadad;
+}
+
+body.home-page .btn-warning.disabled, body.home-page .btn-warning:disabled {
+  background-color: #adadad;
+  border-color: #adadad;
+}
+
+body.home-page .btn-warning:not(:disabled):not(.disabled):active, body.home-page .btn-warning:not(:disabled):not(.disabled).active, body.home-page .show > .btn-warning.dropdown-toggle {
+  background-color: #adadad;
+  border-color: #adadad;
+}
+
+body.home-page .btn-outline-warning {
+  color: #adadad;
+  border-color: #adadad;
+}
+
+body.home-page .btn-outline-warning:hover {
+  background-color: #adadad;
+  border-color: #adadad;
+}
+
+body.home-page .btn-outline-warning.disabled, body.home-page .btn-outline-warning:disabled {
+  color: #adadad;
+}
+
+body.home-page .btn-outline-warning:not(:disabled):not(.disabled):active, body.home-page .btn-outline-warning:not(:disabled):not(.disabled).active, body.home-page .show > .btn-outline-warning.dropdown-toggle {
+  background-color: #adadad;
+  border-color: #adadad;
+}
+
+body.home-page .badge-warning {
+  background-color: #adadad;
+}
+
+body.home-page .badge-warning[href]:hover, body.home-page .badge-warning[href]:focus {
+  background-color: #adadad;
+}
+
+body.home-page .alert-warning {
+  background-color: #adadad;
+  border-color: #adadad;
+}
+
+body.home-page .alert-warning hr {
+  border-top-color: #adadad;
+}
+
+body.home-page .list-group-item-warning {
+  background-color: #adadad;
+}
+
+body.home-page .list-group-item-warning.list-group-item-action:hover, body.home-page .list-group-item-warning.list-group-item-action:focus {
+  background-color: #adadad;
+}
+
+body.home-page .bg-warning {
+  background-color: #adadad !important;
+}
+
+body.home-page a.bg-warning:hover, body.home-page a.bg-warning:focus, body.home-page button.bg-warning:hover, body.home-page button.bg-warning:focus {
+  background-color: #adadad !important;
+}
+
+body.home-page .border-warning {
+  border-color: #adadad !important;
+}
+
+body.home-page .text-warning {
+  color: #adadad !important;
+}
+
+body.home-page a.text-warning:hover, body.home-page a.text-warning:focus {
+  color: #adadad !important;
+}
+
+body.home-page a {
+  color: #adadad;
+}
+
+body.home-page a:hover, body.home-page a:active, body.home-page a:focus {
+  color: #adadad;
+}
+
+body.home-page .text-primary {
+  color: #adadad !important;
+}
+
+body.home-page .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
+  color: #adadad;
+}
+
+body.home-page .ftco-navbar-light .navbar-nav > .nav-item.cta > a {
+  border: 1px solid #adadad;
+  background: #adadad;
+}
+
+body.home-page .ftco-navbar-light .navbar-nav > .nav-item.cta > a:hover {
+  background: #adadad;
+  border: 1px solid #adadad;
+}
+
+body.home-page .ftco-navbar-light .navbar-nav > .nav-item.cta.cta-colored span {
+  border-color: #adadad;
+}
+
+body.home-page .ftco-navbar-light .navbar-nav > .nav-item.active > a {
+  color: #adadad;
+}
+
+body.home-page .ftco-navbar-light.scrolled .nav-item.active > a {
+  color: #adadad !important;
+}
+
+body.home-page .ftco-navbar-light.scrolled .nav-item.cta > a {
+  background: #adadad;
+}
+
+body.home-page .ftco-navbar-light.scrolled .nav-item.cta.cta-colored span {
+  border-color: #adadad;
+}
+
+body.home-page .ftco-navbar-light.scrolled .nav-link.active {
+  color: #adadad !important;
+}
+
+body.home-page .navbar-brand span {
+  color: #adadad;
+}
+
+body.home-page .navbar-brand small {
+  color: #adadad;
+}
+
+body.home-page .owl-carousel .owl-nav .owl-prev, body.home-page .owl-carousel .owl-nav .owl-next {
+  color: #adadad !important;
+}
+
+body.home-page .owl-carousel.home-slider .slider-item .slider-text .subheading {
+  color: #adadad;
+}
+
+body.home-page .bg-primary {
+  background: #adadad;
+}
+
+body.home-page .btn.btn-primary {
+  background: #adadad;
+  border: 1px solid #adadad;
+}
+
+body.home-page .btn.btn-primary:hover {
+  border: 1px solid #adadad;
+  color: #adadad;
+}
+
+body.home-page .btn.btn-primary.btn-outline-primary {
+  border: 1px solid #adadad;
+  color: #adadad;
+}
+
+body.home-page .btn.btn-primary.btn-outline-primary:hover {
+  background: #adadad;
+}
+
+body.home-page .btn.btn-white.btn-outline-white:hover, body.home-page .btn.btn-white.btn-outline-white:focus, body.home-page .btn.btn-white.btn-outline-white:active {
+  background: #adadad;
+  border-color: #adadad;
+}
+
+body.home-page .ftco-intro .wrap .social {
+  background: #adadad;
+}
+
+body.home-page .ftco-intro .wrap .icon span {
+  color: #adadad;
+}
+
+body.home-page .ftco-services .overlay {
+  background: #adadad;
+}
+
+body.home-page .services:hover .icon:after {
+  background: #adadad;
+}
+
+body.home-page .gallery .icon:after {
+  background: #adadad;
+}
+
+body.home-page .ftco-appointment .overlay {
+  background: #adadad;
+}
+
+body.home-page .staff .info h3 a {
+  color: #adadad;
+}
+
+body.home-page .staff,
+body.home-page .staff .img {
+  border-color: #fff;
+}
+
+body.home-page .staff .img.chef-portrait,
+body.home-page .staff:hover .img.chef-portrait,
+body.home-page .staff:focus .img.chef-portrait {
+  position: relative;
+  overflow: visible;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+body.home-page .staff .img.chef-portrait img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+
+body.home-page .staff:hover, body.home-page .staff:focus {
+  border: 1px solid #adadad;
+}
+
+body.home-page .staff:hover .img, body.home-page .staff:focus .img {
+  border: 1px solid #adadad;
+}
+
+body.home-page .staff:hover .info h3,
+body.home-page .staff:hover .info span.position,
+body.home-page .staff:focus .info h3,
+body.home-page .staff:focus .info span.position {
+  font-weight: bold;
+}
+
+body.home-page .ftco-social a span {
+  color: #adadad;
+}
+
+body.home-page .form-control:focus, body.home-page .form-control:active {
+  border-color: #adadad;
+}
+
+body.home-page .bg-primary {
+  background: #adadad !important;
+}
+
+body.home-page .ftco-footer .block-21 .text .heading a:hover, body.home-page .ftco-footer .block-21 .text .heading a:active, body.home-page .ftco-footer .block-21 .text .heading a:focus {
+  color: #adadad;
+}
+
+body.home-page .heading-section h2 span {
+  color: #adadad;
+}
+
+body.home-page .heading-section p.flip span.deg1 {
+  background: #adadad;
+}
+
+body.home-page .heading-section p.flip span.deg2 {
+  background: #adadad;
+}
+
+body.home-page .heading-section p.flip span.deg3 {
+  background: #adadad;
+}
+
+body.home-page .heading-section-dark p.flip:after {
+  background: #adadad;
+}
+
+body.home-page .heading-section-dark p.flip:before {
+  background: #adadad;
+}
+
+body.home-page .ftco-counter .icon:after {
+  bordeR: 1px solid #adadad;
+}
+
+body.home-page .ftco-counter .icon span {
+  color: #adadad;
+}
+
+body.home-page .ftco-counter .text strong.number {
+  color: #adadad;
+}
+
+body.home-page .ftco-counter .text:hover .icon:after, body.home-page .ftco-counter .text:focus .icon:after {
+  background: #adadad;
+}
+
+body.home-page .ftco-menu .nav-pills .nav-link {
+  color: #adadad;
+  bordeR: 1px solid #adadad;
+}
+
+body.home-page .ftco-menu .nav-pills .nav-link.active, body.home-page .ftco-menu .nav-pills .nav-link:hover {
+  background: #adadad;
+}
+
+body.home-page .blog-entry .text .heading a:hover, body.home-page .blog-entry .text .heading a:focus, body.home-page .blog-entry .text .heading a:active {
+  color: #adadad;
+}
+
+body.home-page .block-27 ul li a, body.home-page .block-27 ul li span {
+  color: #adadad;
+}
+
+body.home-page .block-27 ul li.active a, body.home-page .block-27 ul li.active span {
+  background: #adadad;
+}
+
+body.home-page .contact-form .form-control:focus, body.home-page .contact-form .form-control:active {
+  border-color: #adadad !important;
+}
+
+body.home-page .block-21 .text .heading a:hover, body.home-page .block-21 .text .heading a:active, body.home-page .block-21 .text .heading a:focus {
+  color: #adadad;
+}
+
+body.home-page .custom-pagination li.active a, body.home-page .custom-pagination .prev.active a, body.home-page .custom-pagination .next.active a {
+  background: #adadad;
+}
+
+body.home-page .search-form .form-group input {
+  border-bottom: 1px solid #adadad;
+}
+
+body.home-page .owl-carousel.home-slider .slider-text .breadcrumbs {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+body.home-page .owl-carousel.home-slider .slider-text .breadcrumbs span a {
+  color: #adadad;
+}
+
+body.home-page .owl-carousel.home-slider .slider-text .breadcrumbs span a:hover,
+body.home-page .owl-carousel.home-slider .slider-text .breadcrumbs span a:focus {
+  color: #fff !important;
+}
+
+body.home-page :is(h1, h2, h3, h4, h5, h6, p, a, li, button, input, textarea, select, label, blockquote, figcaption, small, strong, em, span:not([class*="icon"]):not([class*="flaticon"])):not(.ftco-appointment *):not(.ftco-footer *) {
+  font-family: "Times New Roman", Times, serif !important;
+}
+
+body.home-page .ftco-counter :is(strong.number, .text > span:not([class*="icon"]):not([class*="flaticon"])) {
+  font-family: "Playfair Display", serif !important;
+}
+
+body.home-page .ftco-appointment :is(h1, h2, h3, h4, h5, h6, p, a, li, button, input, textarea, select, label, blockquote, figcaption, small, strong, em, span:not([class*="icon"]):not([class*="flaticon"])) {
+  font-family: "Playfair Display", serif !important;
+}

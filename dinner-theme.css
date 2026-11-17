@@ -1,0 +1,362 @@
+/* Home-page-only overrides for the previous theme color. */
+body.dinner-page {
+  --yellow: #480c13;
+  --warning: #480c13;
+}
+
+body.dinner-page .breadcrumbs span,
+body.dinner-page .breadcrumbs span a {
+  color: #adadad !important;
+}
+
+body.dinner-page .breadcrumbs span:hover,
+body.dinner-page .breadcrumbs span a:hover {
+  color: #fff !important;
+}
+
+body.dinner-page mark, body.dinner-page .mark {
+  background-color: #480c13;
+}
+
+body.dinner-page .table-warning, body.dinner-page .table-warning > th, body.dinner-page .table-warning > td {
+  background-color: #480c13;
+}
+
+body.dinner-page .table-hover .table-warning:hover {
+  background-color: #480c13;
+}
+
+body.dinner-page .table-hover .table-warning:hover > td, body.dinner-page .table-hover .table-warning:hover > th {
+  background-color: #480c13;
+}
+
+body.dinner-page .btn-warning {
+  background-color: #480c13;
+  border-color: #480c13;
+}
+
+body.dinner-page .btn-warning:hover {
+  background-color: #480c13;
+  border-color: #480c13;
+}
+
+body.dinner-page .btn-warning.disabled, body.dinner-page .btn-warning:disabled {
+  background-color: #480c13;
+  border-color: #480c13;
+}
+
+body.dinner-page .btn-warning:not(:disabled):not(.disabled):active, body.dinner-page .btn-warning:not(:disabled):not(.disabled).active, body.dinner-page .show > .btn-warning.dropdown-toggle {
+  background-color: #480c13;
+  border-color: #480c13;
+}
+
+body.dinner-page .btn-outline-warning {
+  color: #480c13;
+  border-color: #480c13;
+}
+
+body.dinner-page .btn-outline-warning:hover {
+  background-color: #480c13;
+  border-color: #480c13;
+}
+
+body.dinner-page .btn-outline-warning.disabled, body.dinner-page .btn-outline-warning:disabled {
+  color: #480c13;
+}
+
+body.dinner-page .btn-outline-warning:not(:disabled):not(.disabled):active, body.dinner-page .btn-outline-warning:not(:disabled):not(.disabled).active, body.dinner-page .show > .btn-outline-warning.dropdown-toggle {
+  background-color: #480c13;
+  border-color: #480c13;
+}
+
+body.dinner-page .badge-warning {
+  background-color: #480c13;
+}
+
+body.dinner-page .badge-warning[href]:hover, body.dinner-page .badge-warning[href]:focus {
+  background-color: #480c13;
+}
+
+body.dinner-page .alert-warning {
+  background-color: #480c13;
+  border-color: #480c13;
+}
+
+body.dinner-page .alert-warning hr {
+  border-top-color: #480c13;
+}
+
+body.dinner-page .list-group-item-warning {
+  background-color: #480c13;
+}
+
+body.dinner-page .list-group-item-warning.list-group-item-action:hover, body.dinner-page .list-group-item-warning.list-group-item-action:focus {
+  background-color: #480c13;
+}
+
+body.dinner-page .bg-warning {
+  background-color: #480c13 !important;
+}
+
+body.dinner-page a.bg-warning:hover, body.dinner-page a.bg-warning:focus, body.dinner-page button.bg-warning:hover, body.dinner-page button.bg-warning:focus {
+  background-color: #480c13 !important;
+}
+
+body.dinner-page .border-warning {
+  border-color: #480c13 !important;
+}
+
+body.dinner-page .text-warning {
+  color: #480c13 !important;
+}
+
+body.dinner-page .pricing-entry .text:after {
+  border-bottom-color: #480c13;
+}
+
+body.dinner-page a.text-warning:hover, body.dinner-page a.text-warning:focus {
+  color: #480c13 !important;
+}
+
+body.dinner-page a {
+  color: #480c13;
+}
+
+body.dinner-page a:hover, body.dinner-page a:active, body.dinner-page a:focus {
+  color: #480c13;
+}
+
+body.dinner-page .text-primary {
+  color: #480c13 !important;
+}
+
+body.dinner-page .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
+  color: #480c13;
+}
+
+body.dinner-page .ftco-navbar-light .navbar-nav > .nav-item.cta > a {
+  border: 1px solid #480c13;
+  background: #480c13;
+}
+
+body.dinner-page .ftco-navbar-light .navbar-nav > .nav-item.cta > a:hover {
+  background: #480c13;
+  border: 1px solid #480c13;
+}
+
+body.dinner-page .ftco-navbar-light .navbar-nav > .nav-item.cta.cta-colored span {
+  border-color: #480c13;
+}
+
+body.dinner-page .ftco-navbar-light .navbar-nav > .nav-item.active > a {
+  color: #480c13;
+}
+
+body.dinner-page .ftco-navbar-light.scrolled .nav-item.active > a {
+  color: #480c13 !important;
+}
+
+body.dinner-page .ftco-navbar-light.scrolled .nav-item.cta > a {
+  background: #480c13;
+}
+
+body.dinner-page .ftco-navbar-light.scrolled .nav-item.cta.cta-colored span {
+  border-color: #480c13;
+}
+
+body.dinner-page .ftco-navbar-light.scrolled .nav-link.active {
+  color: #480c13 !important;
+}
+
+body.dinner-page .navbar-brand span {
+  color: #480c13;
+}
+
+body.dinner-page .navbar-brand small {
+  color: #480c13;
+}
+
+body.dinner-page .owl-carousel .owl-nav .owl-prev, body.dinner-page .owl-carousel .owl-nav .owl-next {
+  color: #480c13 !important;
+}
+
+body.dinner-page .owl-carousel.home-slider .slider-item .slider-text .subheading {
+  color: #480c13;
+}
+
+body.dinner-page .bg-primary {
+  background: #480c13;
+}
+
+body.dinner-page .btn.btn-primary {
+  background: #480c13;
+  border: 1px solid #480c13;
+}
+
+body.dinner-page .btn.btn-primary:hover {
+  border: 1px solid #480c13;
+  color: #480c13;
+}
+
+body.dinner-page .btn.btn-primary.btn-outline-primary {
+  border: 1px solid #480c13;
+  color: #480c13;
+}
+
+body.dinner-page .btn.btn-primary.btn-outline-primary:hover {
+  background: #480c13;
+}
+
+body.dinner-page .btn.btn-white.btn-outline-white:hover, body.dinner-page .btn.btn-white.btn-outline-white:focus, body.dinner-page .btn.btn-white.btn-outline-white:active {
+  background: #480c13;
+  border-color: #480c13;
+}
+
+body.dinner-page .ftco-intro .wrap .social {
+  background: #480c13;
+}
+
+body.dinner-page .ftco-intro .wrap .icon span {
+  color: #480c13;
+}
+
+body.dinner-page .ftco-services .overlay {
+  background: #480c13;
+}
+
+body.dinner-page .services:hover .icon:after {
+  background: #480c13;
+}
+
+body.dinner-page .gallery .icon:after {
+  background: #480c13;
+}
+
+body.dinner-page .ftco-appointment .overlay {
+  background: #480c13;
+}
+
+body.dinner-page .staff .info h3 a {
+  color: #480c13;
+}
+
+body.dinner-page .staff:hover, body.dinner-page .staff:focus {
+  border: 1px solid #480c13;
+}
+
+body.dinner-page .staff:hover .img, body.dinner-page .staff:focus .img {
+  border: 1px solid #480c13;
+}
+
+body.dinner-page .ftco-social a span {
+  color: #480c13;
+}
+
+body.dinner-page .form-control:focus, body.dinner-page .form-control:active {
+  border-color: #480c13;
+}
+
+body.dinner-page .bg-primary {
+  background: #480c13 !important;
+}
+
+body.dinner-page .ftco-footer .block-21 .text .heading a:hover, body.dinner-page .ftco-footer .block-21 .text .heading a:active, body.dinner-page .ftco-footer .block-21 .text .heading a:focus {
+  color: #480c13;
+}
+
+body.dinner-page .heading-section h2 span {
+  color: #480c13;
+}
+
+body.dinner-page .heading-section p.flip span.deg1 {
+  background: #480c13;
+}
+
+body.dinner-page .heading-section p.flip span.deg2 {
+  background: #480c13;
+}
+
+body.dinner-page .heading-section p.flip span.deg3 {
+  background: #480c13;
+}
+
+body.dinner-page .heading-section-dark p.flip:after {
+  background: #480c13;
+}
+
+body.dinner-page .heading-section-dark p.flip:before {
+  background: #480c13;
+}
+
+body.dinner-page .ftco-counter .icon:after {
+  bordeR: 1px solid #480c13;
+}
+
+body.dinner-page .ftco-counter .icon span {
+  color: #480c13;
+}
+
+body.dinner-page .ftco-counter .text strong.number {
+  color: #480c13;
+}
+
+body.dinner-page .ftco-counter .text:hover .icon:after, body.dinner-page .ftco-counter .text:focus .icon:after {
+  background: #480c13;
+}
+
+body.dinner-page .ftco-menu .nav-pills .nav-link {
+  color: #480c13;
+  bordeR: 1px solid #480c13;
+  background-color: #fff;
+  font-size: 13px;
+}
+
+body.dinner-page .ftco-menu .nav-pills .nav-link.active, body.dinner-page .ftco-menu .nav-pills .nav-link:hover, body.dinner-page .ftco-menu .nav-pills .nav-link:focus {
+  background: #fff;
+  border-color: #fff;
+}
+
+body.dinner-page .ftco-menu .nav-pills .nav-link:hover, body.dinner-page .ftco-menu .nav-pills .nav-link:focus {
+  background: #480c13;
+  border-color: #480c13;
+  color: #fff;
+}
+
+body.dinner-page .ftco-menu .drinks-scroll {
+  height: 600px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 0 15px 15px;
+}
+
+body.dinner-page .blog-entry .text .heading a:hover, body.dinner-page .blog-entry .text .heading a:focus, body.dinner-page .blog-entry .text .heading a:active {
+  color: #480c13;
+}
+
+body.dinner-page .block-27 ul li a, body.dinner-page .block-27 ul li span {
+  color: #480c13;
+}
+
+body.dinner-page .block-27 ul li.active a, body.dinner-page .block-27 ul li.active span {
+  background: #480c13;
+}
+
+body.dinner-page .contact-form .form-control:focus, body.dinner-page .contact-form .form-control:active {
+  border-color: #480c13 !important;
+}
+
+body.dinner-page .block-21 .text .heading a:hover, body.dinner-page .block-21 .text .heading a:active, body.dinner-page .block-21 .text .heading a:focus {
+  color: #480c13;
+}
+
+body.dinner-page .custom-pagination li.active a, body.dinner-page .custom-pagination .prev.active a, body.dinner-page .custom-pagination .next.active a {
+  background: #480c13;
+}
+
+body.dinner-page .search-form .form-group input {
+  border-bottom: 1px solid #480c13;
+}
+
+body.dinner-page :is(h1, h2, h3, h4, h5, h6, p, a, li, button, input, textarea, select, label, blockquote, figcaption, small, strong, em, span:not([class*="icon"]):not([class*="flaticon"]):not([class*="oi"])):not(.ftco-footer *) {
+  font-family: "Times New Roman", Times, serif !important;
+}

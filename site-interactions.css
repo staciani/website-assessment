@@ -1,0 +1,807 @@
+body {
+  background-color: #1c1511;
+  color: #f5eee6;
+}
+
+#ftco-loader.fullscreen {
+  display: grid;
+  place-items: center;
+  background: #f7f0e5;
+}
+
+.restaurant-loader {
+  display: grid;
+  justify-items: center;
+  gap: 0.3rem;
+  color: #62452f;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 0.88rem;
+  letter-spacing: 0.08em;
+}
+
+.restaurant-loader-icon {
+  display: block;
+  width: 112px;
+  height: 112px;
+  overflow: visible;
+}
+
+.loader-fork {
+  transform-origin: 42px 62px;
+  animation: loader-cutlery-sway 2.4s ease-in-out infinite;
+}
+
+.loader-wine-glass {
+  transform-origin: 80px 59px;
+  animation: loader-glass-sway 2.4s ease-in-out infinite;
+}
+
+.restaurant-loader-label {
+  color: #62452f !important;
+  animation: loader-label-glow 2.4s ease-in-out infinite;
+}
+
+@keyframes loader-cutlery-sway {
+  0%, 100% { transform: rotate(-3deg); }
+  50% { transform: rotate(3deg); }
+}
+
+@keyframes loader-glass-sway {
+  0%, 100% { transform: rotate(3deg); }
+  50% { transform: rotate(-3deg); }
+}
+
+@keyframes loader-label-glow {
+  0%, 100% { opacity: 0.7; }
+  50% { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .loader-fork,
+  .loader-wine-glass,
+  .restaurant-loader-label {
+    animation: none;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+.site-nav-button {
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+  white-space: nowrap;
+}
+
+.navbar-dark .navbar-nav .site-nav-button {
+  color: #fff;
+}
+
+.navbar-dark .navbar-nav .site-nav-button:hover,
+.navbar-dark .navbar-nav .site-nav-button:focus {
+  color: #f0c66f;
+}
+
+.site-nav-button:focus-visible,
+.site-guide-close:focus-visible {
+  outline: 2px solid #d7a64b;
+  outline-offset: 3px;
+}
+
+.site-footer-links li {
+  margin-bottom: 0.6rem;
+}
+
+.site-footer-links a {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.site-footer-links a:hover,
+.site-footer-links a:focus {
+  color: #d7a64b;
+}
+
+.site-video-section {
+  background: #211914;
+}
+
+.site-video-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #090807;
+}
+
+.site-video-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.site-video-credit,
+.contact-demo-notice {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.9rem;
+}
+
+.site-video-credit a {
+  color: #e0b766;
+  text-decoration: underline;
+}
+
+.contact-demo-notice {
+  padding: 0.8rem 1rem;
+  border-left: 3px solid #d7a64b;
+  background: rgba(0, 0, 0, 0.22);
+}
+
+.demo-form-status {
+  margin-top: 0.75rem;
+  color: #bce7c5;
+  font-weight: 600;
+}
+
+.demo-form-status.is-error {
+  color: #ffb4a9;
+}
+
+.site-chefs-link {
+  opacity: 0.72;
+  font-size: 0.88em;
+}
+
+.chef-inbox-page .ftco-section {
+  min-height: 45vh;
+}
+
+.chef-inbox-page .contact-demo-notice {
+  margin-bottom: 1.5rem;
+}
+
+.chef-inbox-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.chef-submission-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.chef-submission-card {
+  padding: 1.25rem;
+  border: 1px solid rgba(215, 166, 75, 0.4);
+  background: rgba(255, 255, 255, 0.06);
+  overflow-wrap: anywhere;
+}
+
+.chef-submission-card h3 {
+  color: #fff;
+}
+
+.chef-submission-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.chef-submission-header time,
+.chef-submission-status {
+  color: #e0b766;
+}
+
+.chef-submission-message {
+  margin-bottom: 0;
+  white-space: pre-wrap;
+}
+
+.chef-inbox-empty {
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.chef-inbox-toolbar .btn-danger {
+  margin-left: 0.5rem;
+}
+
+.site-highlight-list {
+  padding-left: 1.25rem;
+}
+
+.site-highlight-list li {
+  margin-bottom: 0.65rem;
+}
+
+.site-guide-dialog {
+  width: min(92vw, 34rem);
+  max-width: none;
+  max-height: min(84vh, 42rem);
+  padding: 0;
+  border: 1px solid rgba(215, 166, 75, 0.65);
+  border-radius: 1rem;
+  color: #f5eee6;
+  background: #211914;
+  box-shadow: 0 1.5rem 5rem rgba(0, 0, 0, 0.42);
+  overflow: auto;
+}
+
+.site-guide-dialog::backdrop {
+  background: rgba(0, 0, 0, 0.72);
+  backdrop-filter: blur(4px);
+}
+
+.site-guide-content {
+  position: relative;
+  padding: clamp(1.5rem, 5vw, 2.5rem);
+}
+
+.site-guide-content h2 {
+  margin-bottom: 0.75rem;
+  color: #fff;
+}
+
+.site-guide-content ul {
+  padding-left: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.site-guide-content li {
+  margin-bottom: 0.5rem;
+}
+
+.site-guide-content a {
+  color: #e0b766;
+}
+
+body:not(.site-light) .site-guide-dialog .site-guide-content a {
+  color: #ffe2a6;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+body:not(.site-light) .site-guide-dialog .site-guide-content a:hover,
+body:not(.site-light) .site-guide-dialog .site-guide-content a:focus-visible {
+  color: #fff;
+}
+
+.site-guide-eyebrow {
+  margin-bottom: 0.5rem;
+  color: #d7a64b;
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.site-guide-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.75rem;
+  border: 0;
+  color: #fff;
+  background: transparent;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+body.site-light .ftco-footer {
+  color: #f5eee6;
+  background: linear-gradient(120deg, #211710, #422b1f) !important;
+}
+
+.block-23 ul li .icon {
+  width: 46px;
+  padding-right: 0.55rem;
+}
+
+.block-23 ul li .text {
+  padding-left: 0.35rem;
+}
+
+body.site-light .site-guide-dialog {
+  border-color: #ddc6a5;
+  color: #35251d;
+  background: #fffaf1;
+}
+
+body.site-light .site-guide-content h2 {
+  color: #35251d;
+}
+
+body.site-light .site-guide-content p,
+body.site-light .site-guide-content li {
+  color: #514237;
+}
+
+body.site-light .site-guide-dialog .site-guide-content a {
+  color: #784018;
+  text-decoration: none;
+}
+
+body.site-light .site-guide-eyebrow {
+  color: #784b30;
+}
+
+body.site-light .site-guide-close {
+  color: #35251d;
+}
+
+.ftco-intro .wrap .social {
+  background: #493022 !important;
+}
+
+.ftco-intro .wrap .social .social-icon a span {
+  color: #fff7ea !important;
+}
+
+body.site-light {
+  --site-light-ink: #39291f;
+  --site-light-muted: #59483a;
+  --site-light-accent: #76452d;
+  --site-light-border: #cfb99a;
+  color: var(--site-light-ink);
+  background: #f8e6bf url("../images/food.png") repeat;
+  background-size: 260px 260px;
+}
+
+body.site-light .ftco-section:not(.ftco-footer):not(.specials-section),
+body.site-light .ftco-menu,
+body.site-light .ftco-intro,
+body.site-light .contact-section,
+body.site-light .site-video-section,
+body.site-light .chef-inbox-page main.ftco-section {
+  color: var(--site-light-ink) !important;
+  background-color: #f5e5c7 !important;
+  background-image:
+    linear-gradient(rgba(255, 249, 235, 0.66), rgba(246, 231, 202, 0.64)),
+    url("../images/food.png") !important;
+  background-size: auto, 260px 260px;
+  background-repeat: no-repeat, repeat;
+}
+
+body.site-light .ftco-section:not(.ftco-footer):not(.specials-section) :is(h1, h2, h3, h4, h5, h6, p, li, label, small, strong, em, blockquote, figcaption, .text, .position),
+body.site-light .ftco-menu :is(h1, h2, h3, h4, h5, h6, p, li, label, small, strong, em, blockquote, figcaption),
+body.site-light .ftco-intro .wrap .info :is(h1, h2, h3, h4, h5, h6, p, small, strong, span:not([class*="icon"])),
+body.site-light .ftco-about > .one-half:not(.img) :is(h1, h2, h3, h4, h5, h6, p, li, small, strong, em),
+body.site-light .ftco-appointment .appointment :is(h1, h2, h3, h4, h5, h6, p, li, label, small, strong, em),
+body.site-light .chef-inbox-page main :is(h1, h2, h3, h4, h5, h6, p, li, label, small, strong, em, span, time) {
+  color: var(--site-light-ink) !important;
+}
+
+body.site-light .ftco-section:not(.ftco-footer):not(.specials-section) a,
+body.site-light .ftco-menu a,
+body.site-light .contact-section a,
+body.site-light .chef-inbox-page main a,
+body.site-light .ftco-intro .wrap .info a,
+body.site-light .ftco-about > .one-half:not(.img) a,
+body.site-light .ftco-appointment .appointment a {
+  color: var(--site-light-accent) !important;
+  text-decoration-color: rgba(118, 69, 45, 0.45);
+}
+
+body.site-light .ftco-section:not(.ftco-footer):not(.specials-section) a:hover,
+body.site-light .ftco-menu a:hover,
+body.site-light .contact-section a:hover,
+body.site-light .chef-inbox-page main a:hover {
+  color: #4d2e20 !important;
+}
+
+body.site-light .ftco-section:not(.ftco-footer):not(.specials-section) .heading-section .subheading,
+body.site-light .ftco-menu .heading-section .subheading,
+body.site-light .site-video-section .heading-section .subheading {
+  color: #784b30 !important;
+}
+
+body.site-light .ftco-intro .wrap .info {
+  background: rgba(237, 222, 198, 0.96) !important;
+}
+
+body.site-light .ftco-intro .wrap .info .icon span {
+  color: var(--site-light-accent) !important;
+}
+
+body.site-light .ftco-intro .wrap .social {
+  background: #6a4530 !important;
+}
+
+body.site-light.home-page .ftco-about > .one-half:not(.img) {
+  border-top: 1px solid rgba(118, 69, 45, 0.18);
+  border-bottom: 1px solid rgba(118, 69, 45, 0.18);
+  color: var(--site-light-ink) !important;
+  background: rgba(242, 228, 205, 0.94) !important;
+  box-shadow: inset 0 0 3rem rgba(120, 78, 42, 0.06);
+  backdrop-filter: blur(7px);
+}
+
+body.site-light.home-page .ftco-about > .one-half:not(.img) h2,
+body.site-light.home-page .ftco-about > .one-half:not(.img) p {
+  color: var(--site-light-ink) !important;
+}
+
+body.site-light.home-page .heading-section h2 span {
+  color: var(--site-light-accent) !important;
+}
+
+body.site-light.home-page .heading-section p.flip:before,
+body.site-light.home-page .heading-section p.flip:after,
+body.site-light.home-page .heading-section p.flip span.deg1,
+body.site-light.home-page .heading-section p.flip span.deg2,
+body.site-light.home-page .heading-section p.flip span.deg3 {
+  background: #9b6849 !important;
+}
+
+body.site-light.home-page .staff {
+  border-color: rgba(118, 69, 45, 0.28);
+  background: rgba(255, 248, 235, 0.84);
+}
+
+body.site-light.home-page .staff .info h3,
+body.site-light.home-page .staff .info h3 a,
+body.site-light.home-page .staff .info span.position {
+  color: var(--site-light-accent) !important;
+}
+
+body.site-light .ftco-menu .menu-wrap {
+  border-color: rgba(118, 69, 45, 0.2);
+  background: rgba(255, 248, 235, 0.96);
+  box-shadow: 0 0.75rem 1.75rem rgba(73, 48, 25, 0.12);
+}
+
+body.site-light .ftco-menu .menu-wrap .text h3 a,
+body.site-light .ftco-menu .menu-wrap .text h3 a:visited,
+body.site-light .ftco-menu .menu-wrap .text h3 a:hover,
+body.site-light .ftco-menu .menu-wrap .text h3 a:focus,
+body.site-light .ftco-menu .menu-wrap .text p,
+body.site-light .ftco-menu .menu-wrap .text .price span {
+  color: var(--site-light-ink) !important;
+}
+
+body.site-light .ftco-menu .menu-wrap .text .price span {
+  color: var(--site-light-accent) !important;
+}
+
+body.site-light .pricing-entry .text:after {
+  border-bottom-color: rgba(118, 69, 45, 0.42) !important;
+}
+
+body.site-light .pricing-entry .text h3 span,
+body.site-light .pricing-entry .text .price {
+  color: var(--site-light-ink) !important;
+  background: transparent !important;
+  background-image: none !important;
+}
+
+body.site-light .pricing-entry .text p {
+  color: var(--site-light-muted) !important;
+}
+
+body.site-light .services-wrap .text {
+  background: rgba(255, 248, 235, 0.97) !important;
+}
+
+body.site-light .services-wrap .text h3,
+body.site-light .services-wrap .text p,
+body.site-light .services-wrap .text .price,
+body.site-light .services-wrap .text .price span {
+  color: var(--site-light-ink) !important;
+}
+
+body.site-light .ftco-menu .nav-pills .nav-link {
+  color: var(--site-light-ink) !important;
+  border-color: var(--site-light-border) !important;
+  background: #f8efdf !important;
+}
+
+body.site-light .ftco-menu .nav-pills .nav-link.active,
+body.site-light .ftco-menu .nav-pills .nav-link:hover,
+body.site-light .ftco-menu .nav-pills .nav-link:focus {
+  color: #fff9ef !important;
+  border-color: var(--site-light-accent) !important;
+  background: var(--site-light-accent) !important;
+}
+
+body.site-light .ftco-section:not(.ftco-footer):not(.specials-section) .text-warning,
+body.site-light .ftco-section:not(.ftco-footer):not(.specials-section) .text-primary {
+  color: var(--site-light-accent) !important;
+}
+
+body.site-light .ftco-counter .text,
+body.site-light .ftco-counter .text span,
+body.site-light .ftco-counter .text strong.number {
+  color: #fff8eb !important;
+}
+
+body.site-light .ftco-counter .text .icon span {
+  color: #f1c979 !important;
+}
+
+body.site-light .ftco-counter .text .icon:after {
+  border-color: #f1c979 !important;
+}
+
+body.site-light .site-video-credit {
+  color: var(--site-light-muted) !important;
+}
+
+body.site-light .site-video-credit a {
+  color: var(--site-light-accent) !important;
+}
+
+body.site-light .ftco-appointment {
+  background: #ead9bd !important;
+}
+
+body.site-light .ftco-appointment > .overlay {
+  opacity: 0 !important;
+}
+
+body.site-light .ftco-appointment .appointment {
+  border-left: 1px solid rgba(118, 69, 45, 0.18);
+  color: var(--site-light-ink) !important;
+  background:
+    linear-gradient(rgba(246, 235, 216, 0.94), rgba(238, 222, 197, 0.96)),
+    url("../images/food.png") repeat !important;
+}
+
+body.site-light .ftco-appointment .appointment h3,
+body.site-light .ftco-appointment .appointment p,
+body.site-light .ftco-appointment .appointment label {
+  color: var(--site-light-ink) !important;
+}
+
+body.site-light .ftco-appointment .appointment-form .form-control,
+body.site-light .contact-section .contact-form .form-control {
+  border: 1px solid #cbb391 !important;
+  border-radius: 0.35rem;
+  padding: 0.75rem 0.9rem;
+  color: var(--site-light-ink) !important;
+  background: rgba(255, 249, 238, 0.96) !important;
+  box-shadow: none !important;
+}
+
+body.site-light .ftco-appointment .appointment-form .form-control::placeholder,
+body.site-light .contact-section .contact-form .form-control::placeholder {
+  color: #6b5847 !important;
+  opacity: 1;
+}
+
+body.site-light .ftco-appointment .appointment-form .form-control:focus,
+body.site-light .contact-section .contact-form .form-control:focus {
+  border-color: var(--site-light-accent) !important;
+  box-shadow: 0 0 0 0.18rem rgba(118, 69, 45, 0.16) !important;
+}
+
+body.site-light .contact-section .contact-info p span {
+  color: var(--site-light-accent) !important;
+}
+
+body.site-light.contact-page .ftco-section.contact-section .contact-info :is(h2, p) {
+  color: #28190f !important;
+}
+
+body.site-light.contact-page .ftco-section.contact-section .contact-info p span {
+  color: #633719 !important;
+}
+
+body.site-light.contact-page .ftco-section.contact-section .contact-info p a {
+  color: #542b16 !important;
+  text-decoration: underline;
+  text-decoration-color: rgba(84, 43, 22, 0.55);
+}
+
+body.site-light.contact-page .ftco-section.contact-section .contact-form .form-control {
+  color: #28190f !important;
+}
+
+body.site-light.contact-page .ftco-section.contact-section .contact-form .form-control::placeholder {
+  color: #51402f !important;
+}
+
+body.site-light.contact-page .ftco-section.contact-section .contact-form .contact-demo-notice {
+  border-left-color: #76452d !important;
+  color: #28190f !important;
+  background: rgba(255, 249, 238, 0.96) !important;
+}
+
+body.site-light.contact-page .ftco-section.contact-section .contact-form .demo-form-status {
+  color: #245c3e !important;
+}
+
+body.site-light.contact-page .ftco-section.contact-section .contact-form .demo-form-status.is-error {
+  color: #8e3028 !important;
+}
+
+body.site-light .btn.btn-primary:not(.btn-outline-primary) {
+  border-color: var(--site-light-accent) !important;
+  color: #fff8ed !important;
+  background: var(--site-light-accent) !important;
+}
+
+body.site-light .btn.btn-primary:not(.btn-outline-primary):hover,
+body.site-light .btn.btn-primary:not(.btn-outline-primary):focus {
+  border-color: #4d2e20 !important;
+  color: #fff8ed !important;
+  background: #4d2e20 !important;
+}
+
+body.site-light .ftco-section a.btn.btn-primary:not(.btn-outline-primary),
+body.site-light .contact-section a.btn.btn-primary:not(.btn-outline-primary) {
+  color: #fff8ed !important;
+}
+
+body.site-light .ftco-section a.btn.btn-primary:not(.btn-outline-primary):hover,
+body.site-light .ftco-section a.btn.btn-primary:not(.btn-outline-primary):focus,
+body.site-light .contact-section a.btn.btn-primary:not(.btn-outline-primary):hover,
+body.site-light .contact-section a.btn.btn-primary:not(.btn-outline-primary):focus {
+  color: #fff8ed !important;
+}
+
+body.site-light .site-footer-links li a,
+body.site-light .site-footer-links li a:visited {
+  color: #fff7ea !important;
+}
+
+body.lunch-page .ftco-footer .site-footer-links a,
+body.dinner-page .ftco-footer .site-footer-links a {
+  color: #fff7ea !important;
+}
+
+body.lunch-page .ftco-footer .site-footer-links a:hover,
+body.lunch-page .ftco-footer .site-footer-links a:focus,
+body.dinner-page .ftco-footer .site-footer-links a:hover,
+body.dinner-page .ftco-footer .site-footer-links a:focus {
+  color: #f1c979 !important;
+}
+
+body.site-light .ftco-footer .ftco-heading-2,
+body.site-light .ftco-footer .ftco-footer-widget p,
+body.site-light .ftco-footer .block-23 li span,
+body.site-light .ftco-footer .block-23 li a {
+  color: #fff7ea !important;
+}
+
+body.site-light .ftco-footer .site-footer-links li a:hover,
+body.site-light .ftco-footer .site-footer-links li a:focus {
+  color: #f1c979 !important;
+}
+
+body.site-light .ftco-footer .text-center p {
+  color: #fff7ea !important;
+  transition: none !important;
+}
+
+body.site-light .ftco-footer .text-center p a {
+  color: #f5cf7a !important;
+  text-decoration: underline;
+  text-decoration-color: rgba(245, 207, 122, 0.7);
+  transition: none !important;
+}
+
+body.site-light .ftco-footer .text-center p a:hover,
+body.site-light .ftco-footer .text-center p a:focus {
+  color: #fff1ca !important;
+}
+
+body.site-light .ftco-section.specials-section {
+  color: #fff7ea !important;
+  background:
+    linear-gradient(120deg, #261a14, #493022) !important;
+}
+
+body.site-light .ftco-section.specials-section :is(h1, h2, h3, h4, h5, h6, p, li, span, small, strong, em) {
+  color: #fff2dd !important;
+}
+
+body.site-light .ftco-section.specials-section .specials-card {
+  border-color: rgba(241, 201, 121, 0.5);
+  background: #32231a;
+}
+
+body.site-light .contact-demo-notice {
+  border-left-color: var(--site-light-accent);
+  color: #4d3b2d !important;
+  background: rgba(221, 201, 170, 0.6);
+}
+
+body.site-light .demo-form-status {
+  color: #245c3e !important;
+}
+
+body.site-light .demo-form-status.is-error {
+  color: #8e3028 !important;
+}
+
+body.site-light .chef-submission-card,
+body.site-light .chef-inbox-empty {
+  border-color: rgba(118, 69, 45, 0.24);
+  background: rgba(255, 248, 235, 0.96);
+}
+
+body.site-light .chef-submission-card :is(h3, p, span, time),
+body.site-light .chef-inbox-toolbar > p {
+  color: var(--site-light-ink) !important;
+}
+
+body.site-light .chef-submission-header time,
+body.site-light .chef-submission-status {
+  color: var(--site-light-accent) !important;
+}
+
+body.site-light .ftco-navbar-light.scrolled .navbar-nav .nav-link,
+body.site-light .ftco-navbar-light.scrolled .navbar-nav .site-nav-button,
+body.site-light .ftco-navbar-light.scrolled .navbar-brand,
+body.site-light .ftco-navbar-light.scrolled .navbar-toggler {
+  color: #fff7ea !important;
+  transition: none !important;
+}
+
+body.site-light .ftco-navbar-light.scrolled .navbar-nav .nav-item.active > .nav-link {
+  color: #f1c979 !important;
+}
+
+.ftco-menu .container-fluid > .row {
+  align-items: stretch;
+}
+
+.ftco-menu .f-menu-img {
+  align-self: stretch;
+  aspect-ratio: auto;
+  height: auto !important;
+}
+
+@media (max-width: 991.98px) {
+  .ftco-menu .f-menu-img {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+body.site-light .ftco-section:not(.ftco-footer):not(.specials-section) :is(h1, h2, h3, h4, h5, h6, p, li, a, label, small, strong, em, span),
+body.site-light .ftco-menu :is(h1, h2, h3, h4, h5, h6, p, li, a, label, small, strong, em, span),
+body.site-light .ftco-intro .wrap .info :is(h1, h2, h3, h4, h5, h6, p, a, label, small, strong, em, span),
+body.site-light .ftco-about > .one-half:not(.img) :is(h1, h2, h3, h4, h5, h6, p, li, a, small, strong, em),
+body.site-light .ftco-appointment .appointment :is(h1, h2, h3, h4, h5, h6, p, li, a, label, small, strong, em, span),
+body.site-light .chef-inbox-page main :is(h1, h2, h3, h4, h5, h6, p, li, a, label, small, strong, em, span, time),
+body.site-light .ftco-footer .site-footer-links a,
+body.site-light .btn.btn-primary,
+body.site-light .ftco-menu .nav-pills .nav-link {
+  transition: none !important;
+}
+
+@media (max-width: 991.98px) {
+  .site-nav-button {
+    padding: 0.5rem !important;
+    text-align: left;
+  }
+
+  .chef-inbox-toolbar,
+  .chef-submission-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .chef-inbox-toolbar > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .chef-inbox-toolbar .btn-danger {
+    margin-left: 0;
+  }
+}
