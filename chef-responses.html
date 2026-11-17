@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Chefs Only | Giorno e Notte</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A local-only assignment demo inbox for Giorno e Notte contact form responses.">
+    <meta name="keywords" content="Giorno e Notte, chef inbox, demo responses">
+    <meta name="theme-color" content="#1c1511">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/site-interactions.css">
+  </head>
+  <body class="chef-inbox-page">
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+      <div class="container">
+        <a class="navbar-brand giorno-notte" href="index.html">Giorno e Notte</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="lunch.html" class="nav-link">Lunch</a></li>
+            <li class="nav-item"><a href="dinner.html" class="nav-link">Dinner</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            <li class="nav-item"><button class="nav-link site-nav-button" id="theme-toggle" type="button" aria-label="Toggle light and dark theme" aria-pressed="false">Switch to light mode</button></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="home-slider img" style="background-image: url(images/giorno-hero.png);">
+      <div class="slider-item" style="background-image: url(images/giorno-hero.png);">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row slider-text justify-content-center align-items-center">
+            <div class="col-md-8 col-sm-12 text-center">
+              <h1 class="mb-3 mt-5 bread">Chefs Only</h1>
+              <p class="breadcrumbs">Assignment demo inbox</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="heading-section text-center mb-4">
+              <h2>Contact Responses</h2>
+              <p>Responses saved by contact forms in this browser</p>
+            </div>
+            <div class="contact-demo-notice" role="note">
+              <strong>Local-only assignment demo:</strong> responses are saved in this browser only. They are not sent to restaurant staff, shared between visitors or devices, or private. Anyone using this browser can view them. Do not enter real contact details or sensitive information.
+            </div>
+            <div class="chef-inbox-toolbar">
+              <p id="chef-inbox-count" class="mb-0" role="status" aria-live="polite"></p>
+              <div>
+                <button id="export-demo-responses" class="btn btn-primary py-2 px-4" type="button">Download backup</button>
+                <button id="clear-demo-responses" class="btn btn-danger py-2 px-4" type="button">Clear responses</button>
+              </div>
+            </div>
+            <p id="chef-inbox-status" class="demo-form-status" role="status" aria-live="polite" hidden></p>
+            <div id="chef-inbox-list" class="chef-submission-list"></div>
+            <p class="mt-4"><a href="contact.html">Back to Contact</a></p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="ftco-footer ftco-section img">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2 class="ftco-heading-2">Giorno e Notte</h2>
+            <p>Fresh lunches and comforting dinners, made for every moment.</p>
+          </div>
+          <div class="col-md-6">
+            <h2 class="ftco-heading-2">Explore</h2>
+            <ul class="site-footer-links list-unstyled">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="lunch.html">Lunch Menu</a></li>
+              <li><a href="dinner.html">Dinner Menu</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center">
+            <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> Giorno e Notte</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/site-interactions.js"></script>
+  </body>
+</html>
